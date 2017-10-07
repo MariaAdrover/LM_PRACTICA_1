@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  
+ <title>Tutorial MUY básico de html</title>
+  
+ <meta name="description" content="Primer ejercicio de práctica para diseñar una página web del módulo Llenguatge de marques
+                                    (Tècnic superior en Desenvolupament d’aplicacions multiplataforma)."/>
+    
+</head>
+
+  
+<body>
+  
+  <h1>Tutorial MUY básico de html</h1>
+  
+  <p>NOTA PARA MI: En este punto del proyecto la estructura de la página cumple con los requisitos marcados en la práctica 
+    en cuanto a elementos que se han de incluir, condiciones que ha de cumplir y validación html5</p>
+  
+  <p>Esta página es el primer ejercicio práctico del módulo Llenguatge de marques (Tècnic superior en Desenvolupament d’aplicacions 
+    multiplataforma). En ella comentaré de forma muy básica algunos cosas que he tenido en cuenta para elaborar mi primera página web  </p> 
+  
+  <p>La página propuesta para el ejercicio ha de tener los estos elementos:</p>
+    
+  <ol>
+    <li>Título y descripción en el head</li>
+    <li>Título informativo en h1</li>
+    <li>Una o más imágenes dimensionada con el atribuo alt que contenga entre 4-8 palabras que describan la imagen 
+       </li>
+    <li>Una tabla de datos relacionada con el tema</li>
+    <li>Una lista con tres enlaces relacionados con el tema (no es ésta)</li>
+    <li>El párrafo que describe el contenido de la página que no estaba especificado en la lista</li>
+  </ol>
+  
+  <p>Y ha de cumplir las siguientes condiciones:</p>
+  
+  <ol>
+    <li>La página ha de ocupar menos de 100Kb (¡OJO con el peso de las imágenes!)</li>
+    <li>Los ficheros han de estar bien organizados en el repositorio (las imágenes en /img)</li>
+    <li>Ha de estar bien indentado</li>
+    <li>No ha de tener faltas de ortografía</li>
+    <li>EL PROYECTO EJECUTADO DESDE RawGit HA DE SER VALIDADO DESDE <a href="https://validator.w3.org/">
+      https://validator.w3.org/</a> </li>
+  </ol>
+  
+  <p> A partir de ahora voy a trabajar en una nueva rama del proyecto (branch) para asegurarme de que conservo la estructura
+    básica del proyecto que cumple con los requisitos de validación de html5 en caso de que las cosas que voy probando me den 
+    errores de validación. Si al terminar, mi página final es correcta, la incorporaré de nuevo a la rama principal. 
+    Entiendo que ésta es en parte la idea de trabajar con GitHub, el control de versiones. </p>
+  
+  <h3>EDITORES WEB</h3>
+  
+  <p> Para empezar a crear una página web necesitamos un editor web. Un editor web es el programa o aplicación que utilizamos
+    para construir o crear una página web. En principio nos puede servir cualquier editor de texto (no confundir con un 
+    procesador web). Yo he utilizado el bloc de notas de Windows10 para crear el primer archivo html, pero luego lo he subido a 
+    mi repositorio para esta práctica en GitHub (PRACTICA-1) y he ido modificando el archivo desde la misma plataforma (en esta 
+    página no explicaré nada sobre GitHub). Para otras páginas me descargaré algún editor web. Un editor web es un editor de texto que 
+    tiene una serie de funciones que facilitan al diseñador la creación de la página web. Dreamweaver, Sublime Text, Notepad++...
+    son algunos de ellos. En <a href="https://www.1and1.es/digitalguide/paginas-web/creacion-de-paginas-web/alternativas-a-dreamweaver-5-soluciones-open-source/">
+                                este artículo</a> puedes encontrar un análisis del Dreamweaver y algunas alternativas a este editor web. </p>
+  
+  <br>
+  <br>
+  
+  <h3>ETIQUETAS Y ATRIBUTOS</h3>
+  
+  <p>Las etiquetas son códigos que están entre los símbolos %lt; y &gt;. La mayoría se han de cerrar con el signo /, 
+    aunque hay etiquetas que no se han de cerrar.</p>
+  <p>Ejemplos:</p>
+  <p>&lt;head&gt; la cierro &lt;/head&gt;</p>
+  
+  <br>
+  <br>
+  
+  <h3>ETIQUETAS QUE HE UTILIZADO</h3>
+  
+   <table style="width:60%">
+     <tr>
+       <th>Etiqueta (Tag)</th>
+       <th>Descripción</th>
+       <th>Atributos</th>
+     </tr>
+    
+     <tr>
+       <td>&lt;p&gt;</td>
+       <td>PÁRRAFO</td>
+       <td>align</td>
+     </tr>
+    
+     <tr>
+       <td>&lt;br&gt;</td>
+       <td>SALTO DE LÍNEA</td>
+       <td></td>
+     </tr>
+     
+     <tr>
+       <td>&lt;b&gt;</td>
+       <td>BOLD (texto en negrita)</td>
+       <td></td>
+     </tr>
+     
+     <tr>
+       <td>&lt;i&gt;</td>
+       <td>ITALIC (texto en cursiva)</td>
+       <td></td>
+     </tr>
+     
+     <tr>
+       <td>&lt;ol&gt;</td>
+       <td>LISTA ORDENADA. Se construye anidando la etiqueta &lt;li&gt;elemento de la lista&lt;/li&gt;</td>
+       <td>start...</td>
+     </tr>
+     
+     <tr>
+       <td>&lt;ul&gt;</td>
+       <td>LISTA DESORDENADA. Se construye anidando la etiqueta &lt;li&gt;elemento de la lista&lt;/li&gt;</td>
+       <td></td>
+     </tr>
+     
+     <tr>
+       <td>&lt;table&gt;</td>
+       <td>TABLA. Se construye anidando la etiqueta &lt;tr&gt;(filas), y anidadas en cada fila &lt;th&gt;nombre de la columna&lt;/th&gt; 
+         para la cabecera y &lt;td&gt;dato&lt;/td&gt; para las demás filas</td>
+       <td></td>
+     </tr>
+     
+     <tr>
+       <td>&lt;a&gt;</td>
+       <td>hyperlink, &lt;a href="url del enlace"&gt;texto que aparecerá&lt;/a&gt;</td>
+       <td>href, hreflang, target, etc.</td>
+     </tr>
+  
+     <tr>
+       <td>&lt;img&gt;</td>
+       <td>IMAGEN, &lt;img src="path relativo"&gt;</td>
+       <td>alt, src, etc.</td>
+     </tr>
+   </table>
+  
+  <br>
+  <br>
+  
+  <h3>ESTRUCTURA BÁSICA</h3>
+  
+  <p>La estructura básica de un documento html5 es la siguiente:</p>
+  
+  <p>&lt;!DOCTYPE html&gt;</p>
+  <br>
+  <p>&lt;html&gt;</p>
+  <br>
+  <p>&lt;head&gt;</p>
+  <p>&lt;/head&gt;</p>
+  <br>
+  <p>&lt;body&gt;</p>
+  <p>&lt;/body&gt;</p>
+  <br>
+  <p>&lt;/html&gt;</p>
+  
+  <p></p>
+  
+  <br>
+  <br>
+  
+  <h3>BREVE DESCRICIÓN DE LA ESTRUCTURA</h3>
+  
+  <p><b>&lt;!DOCTYPE html&gt;</b> nos indica que la página web será programada siguiendo el estándar html5(información 
+    imprescindible para los navegadores y para programodores que trabajen en nuestra página en el futuro).</p>
+  
+  <p><b>&lt;html&gt;</b> entre esta etiqueta y su correspondiente de cierre va el código de nuestra página. </p>
+    
+  <p><b>&lt;head&gt;</b> contendrá las etiquetas del <b>&lt;title&gt;</b> (contiene el título que se ve en la pestaña del navegador),
+    y etiquetas <b>meta</b> (como por ejemplo <b>&lt;meta name="description" content="</b><i>breve descripción de la página que aparecerá en el 
+    buscador</i><b>"/&gt;</b>) y otras etiquetas que contienen información sobre otros elementos de la página. </p>
+    
+  <p><b>&lt;body&gt;</b> contiene la información visible de la página. </p>
+  
+  <br>
+  
+  <table>
+    <tr>
+      <th>Uso de las etiquetas o meta tags</th>
+      <th>Caracteres especiales</th>
+    </tr>
+    
+    <tr>
+      <td> <img src="img/400x350jpeg48kb.jpeg" alt="Lo sentimos, no se puede mostrar la imagen"> </td>
+      <td> <img src="img/476x350jpeg31kb.jpeg" alt="Lo sentimos, no se puede mostrar la imagen"> </td>
+    </tr>  
+  </table>
+    
+  <br>
+  <br>
+  
+  <h3>TUTORIALES DE HTML</h3>
+  
+  <ul>
+    <li> <a href="https://www.gitbook.com/book/hhkaos/cursohtml5desdecero/details">Descargar tutorial en pdf</a> </li>
+    <li> <a href="https://www.aprenderaprogramar.es/index.php?option=com_content&view=category&id=69&Itemid=192">Tutorial Online</a> </li>
+    <li> <a href="https://www.youtube.com/watch?v=QC9_8nRNNHA&list=PLU8oAlHdN5BnX63lyAeV0LzLnpGudgRrK">Vídeotutorial</a> </li>
+  </ul>
+
+</body>
+
+</html>
+  
+  
+  
