@@ -1,5 +1,22 @@
 p {font-family: Arial, Verdana, "sans serif";}
+
 h1 {background:pink}
+
 ol {color:white; font-family: "Courier New", monospace}
+
+div {
+    color:white;
+    background:black;
+    width: 900px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+} 
+
+table, th, td {border: 2px solid black} 
+
+table{border-collapse:collapse}
+
 #primeraLista {background:grey}
+
 #segundaLista {background:pink}
