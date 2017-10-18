@@ -17,6 +17,6 @@ table, th, td {border: 2px solid black}
 th{background:lightgrey}
 table{border-collapse:collapse}
 
-#primeraLista {background:grey}
+#primeraLista {background:grey; color:black}
 
-#segundaLista {background:pink}
+#segundaLista {background:lightgrey; color:black}
