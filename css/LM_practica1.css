@@ -14,7 +14,7 @@ div {
 } 
 
 table, th, td {border: 2px solid black} 
-
+th{background:lightgrey}
 table{border-collapse:collapse}
 
 #primeraLista {background:grey}
